@@ -19,7 +19,7 @@
 <style>
 :root{
   --asphalt:#0C111C; --bluehour:#182640; --panel:#111A2C;
-  --headlight:#F2A31B; --highbeam:#FFCE7A;
+  --headlight:#F2A31B; --highbeam:#FFCE7A; --rust:#9E5200;
   --concrete:#F2F4F7; --card:#FFFFFF; --line:#D9DFE8;
   --ink:#161E29; --steel:#5E6D83; --reflect:#EDF1F7; --dim:#9AA8BC;
   --disp:'Barlow Condensed',sans-serif; --body:'Overpass',sans-serif; --mono:'Overpass Mono',monospace;
@@ -40,8 +40,10 @@ h1,h2,h3{font-family:var(--disp);text-transform:uppercase;line-height:1.02;lette
 h1{font-size:clamp(2.9rem,7.2vw,5.4rem)}
 h2{font-size:clamp(2.1rem,4.4vw,3.3rem)}
 h3{font-size:clamp(1.3rem,2.4vw,1.7rem);letter-spacing:.03em}
-.eyebrow{font-family:var(--mono);font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--headlight);display:flex;align-items:center;gap:12px;margin-bottom:18px}
-.eyebrow::before{content:"";width:26px;height:3px;background:var(--headlight);flex:none}
+.eyebrow{font-family:var(--mono);font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--rust);display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.eyebrow::before{content:"";width:26px;height:3px;background:var(--rust);flex:none}
+.on-dark .eyebrow{color:var(--headlight)}
+.on-dark .eyebrow::before{background:var(--headlight)}
 .lede{font-size:1.14rem;color:var(--steel);max-width:62ch}
 .on-dark .lede,.on-dark p{color:var(--dim)}
 .on-dark h1,.on-dark h2,.on-dark h3{color:var(--reflect)}
@@ -113,7 +115,6 @@ nav.main a[aria-current="page"]{color:var(--headlight);box-shadow:inset 0 -2px 0
 /* ---------- sections ---------- */
 section.lt{padding:96px 0}
 section.dk{padding:96px 0;background:var(--asphalt);color:var(--reflect)}
-section.dk .eyebrow{color:var(--headlight)}
 .shead{margin-bottom:52px;max-width:720px}
 .shead p{margin-top:14px}
 
@@ -129,11 +130,13 @@ a.card:hover{border-top-color:var(--headlight);transform:translateY(-3px)}
 .card h3{margin-bottom:12px}
 .card p{color:var(--steel);font-size:.99rem;flex:1}
 .card .go{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-top:22px;font-weight:600}
-a.card:hover .go{color:var(--headlight)}
+a.card:hover .go{color:var(--rust)}
+.on-dark a.card:hover .go{color:var(--headlight)}
 .dk .card{background:var(--panel);border-color:rgba(237,241,247,.12);border-top-color:var(--headlight)}
 .dk .card p{color:var(--dim)}
 .dk .card h3{color:var(--reflect)}
-.num{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--headlight);font-weight:600;margin-bottom:14px;display:block}
+.num{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--rust);font-weight:600;margin-bottom:14px;display:block}
+.on-dark .num{color:var(--headlight)}
 
 /* ---------- split ---------- */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -166,7 +169,7 @@ a.card:hover .go{color:var(--headlight)}
 .dept{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:30px 28px}
 .dept .tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--headlight);background:var(--asphalt);display:inline-block;padding:6px 12px;border-radius:var(--rad);margin-bottom:18px}
 .dept a{display:block;text-decoration:none;font-family:var(--mono);font-size:.92rem;color:var(--ink);padding:7px 0;word-break:break-all}
-.dept a:hover{color:var(--headlight)}
+.dept a:hover{color:var(--rust)}
 .dept .role{color:var(--steel);font-size:.95rem;margin-bottom:12px}
 
 /* ---------- FAQ ---------- */
@@ -174,7 +177,7 @@ a.card:hover .go{color:var(--headlight)}
 .faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);margin-bottom:14px}
 .faq summary{cursor:pointer;list-style:none;padding:22px 26px;font-family:var(--disp);font-size:1.32rem;font-weight:600;text-transform:uppercase;letter-spacing:.02em;display:flex;justify-content:space-between;gap:18px;align-items:center}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--mono);color:var(--headlight);font-size:1.3rem;flex:none}
+.faq summary::after{content:"+";font-family:var(--mono);color:var(--rust);font-size:1.3rem;flex:none}
 .faq details[open] summary::after{content:"\2212"}
 .faq details[open] summary{border-bottom:1px solid var(--line)}
 .faq .a{padding:20px 26px 26px;color:var(--steel)}
@@ -185,7 +188,7 @@ a.card:hover .go{color:var(--headlight)}
 .steps{counter-reset:s;display:grid;gap:0;max-width:860px}
 .step{display:grid;grid-template-columns:88px 1fr;gap:26px;padding:34px 0;border-bottom:1px solid var(--line)}
 .step:last-child{border-bottom:none}
-.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--disp);font-weight:700;font-size:2.6rem;color:rgba(242,163,27,.28);-webkit-text-stroke:1.5px var(--headlight);line-height:1}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--disp);font-weight:700;font-size:2.6rem;color:rgba(158,82,0,.22);-webkit-text-stroke:1.5px var(--rust);line-height:1}
 .step h3{margin-bottom:8px}
 .step p{color:var(--steel)}
 @media(max-width:600px){.step{grid-template-columns:1fr;gap:8px}}
@@ -213,7 +216,7 @@ footer li{list-style:none;padding:5px 0}
   "name": "After Hours Auto, Inc.",
   "alternateName": "After Hours Towing & Transport",
   "description": "Privately owned enclosed auto and motorcycle transport carrier providing door-to-door service across the 48 contiguous states since 1997.",
-  "slogan": "Driving excellence, day or night",
+  "slogan": "Keeping your vehicles moving forward",
   "foundingDate": "1997",
   "telephone": "+1-617-527-1793",
   "email": "dispatchafterhourstransport@gmail.com",
