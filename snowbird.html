@@ -193,6 +193,36 @@ a.card:hover .go{color:var(--rust)}
 .step p{color:var(--steel)}
 @media(max-width:600px){.step{grid-template-columns:1fr;gap:8px}}
 
+/* ---------- reviews ---------- */
+.rating{display:flex;align-items:center;gap:14px 20px;flex-wrap:wrap;margin-bottom:44px}
+.rating .stars{color:var(--headlight);font-size:1.4rem;letter-spacing:3px;line-height:1}
+.rating .score{font-family:var(--disp);font-weight:700;font-size:2rem;color:var(--reflect);line-height:1}
+.rating .meta{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.rating .glink{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--headlight);text-decoration:none;border:1px solid var(--steel);padding:9px 14px;border-radius:var(--rad)}
+.rating .glink:hover{border-color:var(--headlight)}
+.rev{background:var(--panel);border:1px solid rgba(237,241,247,.12);border-top:3px solid var(--headlight);border-radius:var(--rad);padding:26px 24px;display:flex;flex-direction:column}
+.rev .stars{color:var(--headlight);font-size:.9rem;letter-spacing:2px;margin-bottom:14px}
+.rev p{color:var(--dim);font-size:.99rem;flex:1}
+.rev cite{margin-top:20px;font-style:normal;font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--headlight)}
+
+/* ---------- gallery ---------- */
+.gal{columns:3;column-gap:18px}
+@media(max-width:900px){.gal{columns:2}}
+@media(max-width:540px){.gal{columns:1}}
+.gal button{display:block;width:100%;break-inside:avoid;margin:0 0 18px;padding:0;border:1px solid var(--line);border-radius:var(--rad);overflow:hidden;background:var(--bluehour);cursor:pointer;position:relative}
+.gal button::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 0 var(--headlight);transition:box-shadow .16s ease}
+.gal button:hover::after{box-shadow:inset 0 0 0 3px var(--headlight)}
+.gal img{width:100%;display:block}
+.lb{position:fixed;inset:0;background:rgba(8,11,18,.94);display:none;align-items:center;justify-content:center;z-index:120;padding:24px}
+.lb.on{display:flex}
+.lb img{max-width:94vw;max-height:86vh;border-radius:var(--rad);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb .x{position:absolute;top:18px;right:22px;background:none;border:1px solid var(--steel);color:var(--reflect);font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:9px 15px;border-radius:var(--rad);cursor:pointer}
+.lb .x:hover{border-color:var(--headlight);color:var(--headlight)}
+.lb .nav{position:absolute;top:50%;transform:translateY(-50%);background:none;border:1px solid var(--steel);color:var(--reflect);font-size:1.6rem;width:52px;height:52px;border-radius:50%;cursor:pointer;line-height:1}
+.lb .nav:hover{border-color:var(--headlight);color:var(--headlight)}
+.lb .prev{left:20px}.lb .next{right:20px}
+@media(max-width:600px){.lb .nav{width:44px;height:44px;font-size:1.3rem}.lb .prev{left:10px}.lb .next{right:10px}}
+
 /* ---------- footer ---------- */
 footer.site{background:var(--asphalt);color:var(--dim);padding:70px 0 0;font-size:.95rem}
 .fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:44px;padding-bottom:56px}
@@ -229,12 +259,11 @@ footer li{list-style:none;padding:5px 0}
     "addressCountry": "US"
   },
   "areaServed": {"@type": "Country", "name": "United States"},
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "17:00"
-  }],
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"17:00"}
+  ],
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"25","bestRating":"5"},
   "paymentAccepted": "Cash, Check, Venmo, Zelle, Credit Card",
   "identifier": [
     {"@type": "PropertyValue", "propertyID": "USDOT", "value": "697230"},
@@ -261,7 +290,7 @@ footer li{list-style:none;padding:5px 0}
 <header class="site"><div class="wrap bar">
 <a class="brand" href="index.html"><svg width="34" height="34" viewBox="0 0 32 32" fill="none" role="img" aria-label="After Hours Auto mark"><rect width="32" height="32" rx="6" fill="#0C111C" stroke="#F2A31B" stroke-width="1"/><circle cx="16" cy="12" r="7" fill="#F2A31B"/><rect x="4" y="22" width="6" height="3" rx="1" fill="#F2A31B"/><rect x="13" y="22" width="6" height="3" rx="1" fill="#F2A31B"/><rect x="22" y="22" width="6" height="3" rx="1" fill="#F2A31B"/></svg><span><span class="nm">After <b>Hours</b></span><span class="sub">Towing &amp; Transport</span></span></a>
 <button class="menu-t" aria-expanded="false" aria-controls="mainnav" onclick="var n=document.getElementById('mainnav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
-<nav class="main" id="mainnav" aria-label="Main"><ul><li><a href="services.html">Services</a></li><li><a href="snowbird.html" aria-current="page">Snowbird</a></li><li><a href="fleet.html">Fleet</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a class="callbtn" href="tel:+16175271793">Dispatch 617-527-1793</a></li></ul></nav>
+<nav class="main" id="mainnav" aria-label="Main"><ul><li><a href="services.html">Services</a></li><li><a href="snowbird.html" aria-current="page">Snowbird</a></li><li><a href="fleet.html">Fleet</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a class="callbtn" href="tel:+16175271793">Dispatch 617-527-1793</a></li></ul></nav>
 </div></header>
 <main id="main">
 
@@ -326,8 +355,8 @@ footer li{list-style:none;padding:5px 0}
 <p style="margin-top:10px"><a href="https://instagram.com/ahatransport" rel="noopener">Instagram: @ahatransport</a></p></div>
 <div><h4>Visit</h4><ul>
 <li>145R W Main St<br>Norton, MA 02766</li>
-<li style="margin-top:10px">Office: Mon to Fri<br>9am to 5pm</li>
-<li>On call after hours</li></ul></div>
+<li style="margin-top:10px">Mon to Fri: 8am to 7pm<br>Sat: 8am to 5pm<br>Sun: closed</li>
+<li style="margin-top:6px">On call beyond that</li></ul></div>
 <div><h4>Departments</h4><ul>
 <li><a href="tel:+18572096454">Operations 857-209-6454</a></li>
 <li><a href="tel:+16175271793">Dispatch 617-527-1793</a></li>
