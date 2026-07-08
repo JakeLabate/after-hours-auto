@@ -223,6 +223,35 @@ a.card:hover .go{color:var(--rust)}
 .lb .prev{left:20px}.lb .next{right:20px}
 @media(max-width:600px){.lb .nav{width:44px;height:44px;font-size:1.3rem}.lb .prev{left:10px}.lb .next{right:10px}}
 
+/* ---------- lead capture ---------- */
+.lphero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+@media(max-width:920px){.lphero{grid-template-columns:1fr;gap:40px}}
+.trustrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.trustrow span{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--reflect);border:1px solid rgba(242,163,27,.45);border-radius:var(--rad);padding:8px 12px}
+.trustrow span b{color:var(--headlight);font-weight:600}
+.qform{background:var(--card);border-radius:var(--rad);border:1px solid var(--line);border-top:4px solid var(--headlight);padding:30px 28px;color:var(--ink)}
+.qform h2{font-size:1.7rem;margin-bottom:6px;color:var(--ink)}
+.qform .sub{color:var(--steel);font-size:.92rem;margin-bottom:20px}
+.qform label{display:block;font-family:var(--mono);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);font-weight:600;margin:14px 0 6px}
+.qform input,.qform select,.qform textarea{width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);background:var(--concrete);border:1px solid var(--line);border-radius:var(--rad);padding:12px 13px}
+.qform input:focus,.qform select:focus,.qform textarea:focus{outline:2px solid var(--rust);border-color:var(--rust)}
+.qform .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:480px){.qform .two{grid-template-columns:1fr}}
+.qform button{width:100%;margin-top:22px;font-family:var(--mono);font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:var(--headlight);color:var(--ink);border:none;border-radius:var(--rad);padding:16px;cursor:pointer}
+.qform button:hover{background:var(--highbeam)}
+.qform .alt{margin-top:16px;font-size:.9rem;color:var(--steel);text-align:center}
+.qform .alt a{color:var(--rust);font-weight:600;text-decoration:none}
+.qform .alt a:hover{text-decoration:underline}
+.qnote{margin-top:12px;font-size:.8rem;color:var(--steel);text-align:center}
+.stickycall{display:none}
+@media(max-width:720px){
+  .stickycall{display:grid;grid-template-columns:1fr 1fr;gap:1px;position:fixed;left:0;right:0;bottom:0;z-index:90;background:rgba(242,163,27,.4)}
+  .stickycall a{text-align:center;font-family:var(--mono);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:17px 8px}
+  .stickycall .c1{background:var(--asphalt);color:var(--headlight)}
+  .stickycall .c2{background:var(--headlight);color:var(--ink)}
+  body.haslp{padding-bottom:54px}
+}
+
 /* ---------- footer ---------- */
 footer.site{background:var(--asphalt);color:var(--dim);padding:70px 0 0;font-size:.95rem}
 .fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:44px;padding-bottom:56px}
