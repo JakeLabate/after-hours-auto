@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>After Hours Auto, Inc. | Enclosed Auto Transport, Norton MA</title>
 <meta name="description" content="Privately owned enclosed auto and motorcycle transport out of Norton, Massachusetts. Door-to-door service across the lower 48 since 1997. USDOT 697230, BBB A+ accredited.">
+<link rel="canonical" href="https://jakelabate.github.io/after-hours-auto/">
+<meta property="og:url" content="https://jakelabate.github.io/after-hours-auto/">
 <meta property="og:title" content="After Hours Auto, Inc. | Enclosed Auto Transport, Norton MA">
 <meta property="og:description" content="Privately owned enclosed auto and motorcycle transport out of Norton, Massachusetts. Door-to-door service across the lower 48 since 1997. USDOT 697230, BBB A+ accredited.">
 <meta property="og:type" content="website">
@@ -252,6 +254,37 @@ a.card:hover .go{color:var(--rust)}
   body.haslp{padding-bottom:54px}
 }
 
+/* ---------- vehicle types strip ---------- */
+.types{background:var(--bluehour);border-bottom:1px solid rgba(242,163,27,.22);padding:15px 0}
+.types .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:center}
+.types span{font-family:var(--mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--reflect);white-space:nowrap}
+.types span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--headlight);margin-right:11px;vertical-align:2px}
+
+/* ---------- photo strip ---------- */
+.photostrip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:640px){.photostrip{grid-template-columns:1fr}}
+.photostrip a{display:block;border-radius:var(--rad);overflow:hidden;border:1px solid var(--line);background:var(--bluehour)}
+.photostrip img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .25s ease}
+.photostrip a:hover img{transform:scale(1.04)}
+.dk .photostrip a{border-color:rgba(237,241,247,.15)}
+@media(prefers-reduced-motion:reduce){.photostrip img{transition:none}.photostrip a:hover img{transform:none}}
+
+/* ---------- card polish ---------- */
+a.card:hover{border-top-color:var(--headlight);transform:translateY(-3px);box-shadow:0 12px 28px rgba(12,17,28,.10)}
+@media(prefers-reduced-motion:reduce){a.card:hover{transform:none}}
+
+/* ---------- LP chrome ---------- */
+.lpchip{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--reflect);border:1px solid rgba(242,163,27,.45);border-radius:var(--rad);padding:9px 13px;margin-left:auto;white-space:nowrap}
+.lpchip b{color:var(--headlight);font-weight:600}
+@media(max-width:600px){.lpchip{display:none}}
+header.lps .callbtn{margin-left:14px}
+.sent{display:none;margin-top:14px;background:#E9F3EC;border:1px solid #B9D8C4;color:#1D5330;padding:12px 14px;border-radius:var(--rad);font-size:.9rem}
+.sent.on{display:block}
+footer.lpf{background:var(--asphalt);color:var(--dim);padding:44px 0 0;font-size:.92rem}
+footer.lpf .row{display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;align-items:center;padding-bottom:26px}
+footer.lpf a{color:var(--reflect);text-decoration:none;font-family:var(--mono);font-size:.8rem}
+footer.lpf a:hover{color:var(--highbeam)}
+
 /* ---------- footer ---------- */
 footer.site{background:var(--asphalt);color:var(--dim);padding:70px 0 0;font-size:.95rem}
 .fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:44px;padding-bottom:56px}
@@ -314,7 +347,7 @@ footer li{list-style:none;padding:5px 0}
 </div></header>
 <main id="main">
 
-<div class="hero on-dark"><div class="wrap">
+<div class="hero on-dark" style="background-image:linear-gradient(178deg,rgba(12,17,28,.92) 8%,rgba(20,32,54,.88) 60%,rgba(30,45,74,.9) 100%),url('https://primary.jwwb.nl/public/w/a/q/temp-svdxyixrwpydpehgpmvq/8683e15c-fb7f-468a-ad46-5ad31bffffac-high.jpg?enable-io=true&amp;enable=upscale&amp;width=1200');background-size:cover;background-position:center 62%"><div class="wrap">
 <p class="eyebrow">Enclosed auto transport &middot; Norton, Massachusetts</p>
 <h1>Day or night.<br>Door to door.</h1>
 <p class="lede">After Hours Auto is a privately owned enclosed transport carrier moving cars and motorcycles across the lower 48 since 1997. Our trucks, our drivers, and a name we take literally.</p>
@@ -330,6 +363,9 @@ footer li{list-style:none;padding:5px 0}
 </div>
 </div></div>
 <div class="lane go" aria-hidden="true"></div>
+<div class="types" role="list" aria-label="Vehicle types we transport"><div class="wrap">
+<span role="listitem">Exotic</span><span role="listitem">Luxury</span><span role="listitem">Classic</span><span role="listitem">Motorcycles</span><span role="listitem">Snowbird</span><span role="listitem">Non-running</span>
+</div></div>
 
 <section class="lt"><div class="wrap">
 <div class="shead"><p class="eyebrow">What we move</p>
@@ -409,6 +445,21 @@ footer li{list-style:none;padding:5px 0}
 </ul>
 <div class="actions"><a class="btn dkghost" href="how-it-works.html">How it works</a></div>
 </div>
+</div>
+</div></section>
+
+<section class="dk on-dark"><div class="wrap">
+<div class="shead"><p class="eyebrow">On the road</p>
+<h2>Follow the trucks</h2>
+<p class="lede">The fleet posts its own highlight reel. See the loads, the equipment, and the miles as they happen.</p></div>
+<div class="photostrip">
+<a href="gallery.html" aria-label="View gallery"><img src="https://primary.jwwb.nl/public/w/a/q/temp-svdxyixrwpydpehgpmvq/img_2856-high.jpg?enable-io=true&amp;enable=upscale&amp;width=1200" alt="After Hours Auto fleet truck detail" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+<a href="gallery.html" aria-label="View gallery"><img src="https://primary.jwwb.nl/public/w/a/q/temp-svdxyixrwpydpehgpmvq/_dsc3745-high.jpg?enable-io=true&amp;enable=upscale&amp;width=1200" alt="After Hours Auto wrecker at work" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+<a href="gallery.html" aria-label="View gallery"><img src="https://primary.jwwb.nl/public/w/a/q/temp-svdxyixrwpydpehgpmvq/joe-s-truck-standard.jpg" alt="After Hours Auto truck ready for a run" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
+</div>
+<div class="actions" style="margin-top:30px">
+<a class="btn ghost" href="https://instagram.com/ahatransport" rel="noopener">@ahatransport on Instagram</a>
+<a class="btn ghost" href="gallery.html">Full gallery</a>
 </div>
 </div></section>
 
