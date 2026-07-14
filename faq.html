@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAQ | After Hours Auto, Inc.</title>
 <meta name="description" content="Answers on enclosed auto transport: coverage area, motorcycles, non-running vehicles, payment methods, licensing and insurance, hours, and snowbird moves.">
+<link rel="canonical" href="https://jakelabate.github.io/after-hours-auto/faq.html">
+<meta property="og:url" content="https://jakelabate.github.io/after-hours-auto/faq.html">
 <meta property="og:title" content="FAQ | After Hours Auto, Inc.">
 <meta property="og:description" content="Answers on enclosed auto transport: coverage area, motorcycles, non-running vehicles, payment methods, licensing and insurance, hours, and snowbird moves.">
 <meta property="og:type" content="website">
@@ -251,6 +253,37 @@ a.card:hover .go{color:var(--rust)}
   .stickycall .c2{background:var(--headlight);color:var(--ink)}
   body.haslp{padding-bottom:54px}
 }
+
+/* ---------- vehicle types strip ---------- */
+.types{background:var(--bluehour);border-bottom:1px solid rgba(242,163,27,.22);padding:15px 0}
+.types .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:center}
+.types span{font-family:var(--mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--reflect);white-space:nowrap}
+.types span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--headlight);margin-right:11px;vertical-align:2px}
+
+/* ---------- photo strip ---------- */
+.photostrip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:640px){.photostrip{grid-template-columns:1fr}}
+.photostrip a{display:block;border-radius:var(--rad);overflow:hidden;border:1px solid var(--line);background:var(--bluehour)}
+.photostrip img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .25s ease}
+.photostrip a:hover img{transform:scale(1.04)}
+.dk .photostrip a{border-color:rgba(237,241,247,.15)}
+@media(prefers-reduced-motion:reduce){.photostrip img{transition:none}.photostrip a:hover img{transform:none}}
+
+/* ---------- card polish ---------- */
+a.card:hover{border-top-color:var(--headlight);transform:translateY(-3px);box-shadow:0 12px 28px rgba(12,17,28,.10)}
+@media(prefers-reduced-motion:reduce){a.card:hover{transform:none}}
+
+/* ---------- LP chrome ---------- */
+.lpchip{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--reflect);border:1px solid rgba(242,163,27,.45);border-radius:var(--rad);padding:9px 13px;margin-left:auto;white-space:nowrap}
+.lpchip b{color:var(--headlight);font-weight:600}
+@media(max-width:600px){.lpchip{display:none}}
+header.lps .callbtn{margin-left:14px}
+.sent{display:none;margin-top:14px;background:#E9F3EC;border:1px solid #B9D8C4;color:#1D5330;padding:12px 14px;border-radius:var(--rad);font-size:.9rem}
+.sent.on{display:block}
+footer.lpf{background:var(--asphalt);color:var(--dim);padding:44px 0 0;font-size:.92rem}
+footer.lpf .row{display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;align-items:center;padding-bottom:26px}
+footer.lpf a{color:var(--reflect);text-decoration:none;font-family:var(--mono);font-size:.8rem}
+footer.lpf a:hover{color:var(--highbeam)}
 
 /* ---------- footer ---------- */
 footer.site{background:var(--asphalt);color:var(--dim);padding:70px 0 0;font-size:.95rem}
