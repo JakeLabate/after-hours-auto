@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Miami to Boston Auto Transport | After Hours Auto, Inc.</title>
 <meta name="description" content="Door-to-door enclosed car shipping from Miami, FL to Boston, MA, and back. About 1,500 I-95 miles your vehicle rides protected. Privately owned carrier since 1997.">
+<link rel="canonical" href="https://jakelabate.github.io/after-hours-auto/miami-to-boston.html">
+<meta property="og:url" content="https://jakelabate.github.io/after-hours-auto/miami-to-boston.html">
 <meta property="og:title" content="Miami to Boston Auto Transport | After Hours Auto, Inc.">
 <meta property="og:description" content="Door-to-door enclosed car shipping from Miami, FL to Boston, MA, and back. About 1,500 I-95 miles your vehicle rides protected. Privately owned carrier since 1997.">
 <meta property="og:type" content="website">
@@ -252,6 +254,37 @@ a.card:hover .go{color:var(--rust)}
   body.haslp{padding-bottom:54px}
 }
 
+/* ---------- vehicle types strip ---------- */
+.types{background:var(--bluehour);border-bottom:1px solid rgba(242,163,27,.22);padding:15px 0}
+.types .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:center}
+.types span{font-family:var(--mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--reflect);white-space:nowrap}
+.types span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--headlight);margin-right:11px;vertical-align:2px}
+
+/* ---------- photo strip ---------- */
+.photostrip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:640px){.photostrip{grid-template-columns:1fr}}
+.photostrip a{display:block;border-radius:var(--rad);overflow:hidden;border:1px solid var(--line);background:var(--bluehour)}
+.photostrip img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .25s ease}
+.photostrip a:hover img{transform:scale(1.04)}
+.dk .photostrip a{border-color:rgba(237,241,247,.15)}
+@media(prefers-reduced-motion:reduce){.photostrip img{transition:none}.photostrip a:hover img{transform:none}}
+
+/* ---------- card polish ---------- */
+a.card:hover{border-top-color:var(--headlight);transform:translateY(-3px);box-shadow:0 12px 28px rgba(12,17,28,.10)}
+@media(prefers-reduced-motion:reduce){a.card:hover{transform:none}}
+
+/* ---------- LP chrome ---------- */
+.lpchip{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--reflect);border:1px solid rgba(242,163,27,.45);border-radius:var(--rad);padding:9px 13px;margin-left:auto;white-space:nowrap}
+.lpchip b{color:var(--headlight);font-weight:600}
+@media(max-width:600px){.lpchip{display:none}}
+header.lps .callbtn{margin-left:14px}
+.sent{display:none;margin-top:14px;background:#E9F3EC;border:1px solid #B9D8C4;color:#1D5330;padding:12px 14px;border-radius:var(--rad);font-size:.9rem}
+.sent.on{display:block}
+footer.lpf{background:var(--asphalt);color:var(--dim);padding:44px 0 0;font-size:.92rem}
+footer.lpf .row{display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;align-items:center;padding-bottom:26px}
+footer.lpf a{color:var(--reflect);text-decoration:none;font-family:var(--mono);font-size:.8rem}
+footer.lpf a:hover{color:var(--highbeam)}
+
 /* ---------- footer ---------- */
 footer.site{background:var(--asphalt);color:var(--dim);padding:70px 0 0;font-size:.95rem}
 .fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:44px;padding-bottom:56px}
@@ -319,10 +352,10 @@ footer li{list-style:none;padding:5px 0}
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
-<header class="site"><div class="wrap bar">
+<header class="site lps"><div class="wrap bar">
 <a class="brand" href="index.html"><svg width="34" height="34" viewBox="0 0 32 32" fill="none" role="img" aria-label="After Hours Auto mark"><rect width="32" height="32" rx="6" fill="#0C111C" stroke="#F2A31B" stroke-width="1"/><circle cx="16" cy="12" r="7" fill="#F2A31B"/><rect x="4" y="22" width="6" height="3" rx="1" fill="#F2A31B"/><rect x="13" y="22" width="6" height="3" rx="1" fill="#F2A31B"/><rect x="22" y="22" width="6" height="3" rx="1" fill="#F2A31B"/></svg><span><span class="nm">After <b>Hours</b></span><span class="sub">Towing &amp; Transport</span></span></a>
-<button class="menu-t" aria-expanded="false" aria-controls="mainnav" onclick="var n=document.getElementById('mainnav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
-<nav class="main" id="mainnav" aria-label="Main"><ul><li><a href="services.html">Services</a></li><li><a href="snowbird.html">Snowbird</a></li><li><a href="fleet.html">Fleet</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a class="callbtn" href="tel:+16175271793">Dispatch 617-527-1793</a></li></ul></nav>
+<span class="lpchip"><b>&#9733; 5.0</b> &middot; 25 Google reviews</span>
+<a class="callbtn" href="tel:+18572096454">Call 857-209-6454</a>
 </div></header>
 <main id="main">
 
@@ -368,6 +401,7 @@ footer li{list-style:none;padding:5px 0}
 <label for="q-run">Does it run and drive?</label>
 <select id="q-run"><option>Runs and drives</option><option>Does not run</option><option>Lowered or modified</option><option>Motorcycle</option></select>
 <button type="submit">Send my quote request</button>
+<p class="sent" id="sentmsg" role="status">Your email app should have opened with the request filled in. Hit send there and operations will call you back. If it did not open, call 857-209-6454 and we will take it by phone.</p>
 <p class="qnote">Sends the request to our operations inbox from your email app.</p>
 <p class="alt">Faster by phone? <a href="tel:+18572096454">Call operations 857-209-6454</a></p>
 </form>
@@ -378,10 +412,13 @@ footer li{list-style:none;padding:5px 0}
 <section class="dk on-dark" style="padding:76px 0"><div class="wrap">
 <div class="shead"><p class="eyebrow">From their Google reviews</p>
 <h2>This corridor, in a customer's words</h2></div>
-<div class="grid2">
+<div class="grid3">
 <blockquote class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
 <p>I have used various carriers to ship a vehicle from MA to FL - After Hours and V was the best. They always answer their phone and give accurate details on pick up and arrival. Other carries deliver to a large parking lot - I got a knock on my door - and my vehicle was in my driveway!</p>
-<cite>Verified Google review &middot; Massachusetts to Florida corridor</cite></blockquote>
+<cite>Verified Google review &middot; MA to FL corridor</cite></blockquote>
+<blockquote class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+<p>Fantastic communication, very professional and at a fair price. He picked up and delivered the car as promised with an enclosed trailer. The car was perfect when it arrived.</p>
+<cite>Verified Google review</cite></blockquote>
 <div class="card"><h3>Both directions, every season</h3><p>Miami to Boston is the classic spring snowbird return, and Boston to Miami the fall run south. We move the corridor year-round in both directions, including the suburbs and stops near the route. Door to door still means your door.</p>
 <span class="go" style="color:var(--headlight)"><a href="#quote" style="color:inherit;text-decoration:none">Start your quote &uarr;</a></span></div>
 </div>
@@ -406,6 +443,18 @@ footer li{list-style:none;padding:5px 0}
 <div class="card"><h3>Any vehicle</h3><p>Exotics ride our custom flatbed, motorcycles ship enclosed, and lowered, altered, or non-running vehicles load with specialized ramps and lifts.</p></div>
 <div class="card"><h3>Simple payment</h3><p>Cash or check skips the 4% card convenience fee, and we also take Venmo, Zelle, and credit cards.</p></div>
 </div>
+</div></section>
+
+<section class="lt" style="padding:76px 0"><div class="wrap">
+<div class="shead"><p class="eyebrow">Before you book</p>
+<h2>The questions everyone asks about this run</h2></div>
+<div class="faq">
+<details><summary>How far ahead should I book?</summary><div class="a"><p>The earlier you call, the more flexibility we have on your pickup window. Northbound demand peaks in spring and southbound in fall, so around the snowbird seasons, sooner is better.</p></div></details>
+<details><summary>Is my vehicle insured during transport?</summary><div class="a"><p>Yes. The company is fully insured, and our federal operating authority (USDOT 697230, MC 324432, held since 1997) is publicly verifiable through the FMCSA before you hand anyone your keys.</p></div></details>
+<details><summary>Do you really pick up and deliver at my door?</summary><div class="a"><p>That is the service. Pickup at your Florida address, delivery at your Massachusetts address, no terminals and no parking-lot handoffs. If your street is tight for a truck, we work out the nearest workable spot with you.</p></div></details>
+<details><summary>What if my car is lowered, modified, or does not run?</summary><div class="a"><p>Bring it anyway. Specialized ramps and lifts handle low riders and altered cars, our custom flatbed was built for exotics, and fully disabled vehicles load safely with the right equipment.</p></div></details>
+</div>
+<div class="actions" style="margin-top:34px"><a class="btn solid" href="#quote">Get my quote</a></div>
 </div></section>
 
 <section class="cta on-dark"><div class="wrap">
@@ -433,39 +482,21 @@ function sendQuote(e){
     +"Condition: "+encodeURIComponent(g('q-run'))+"%0D%0A"
     +"Timeframe: "+encodeURIComponent(g('q-when'));
   window.location.href="mailto:vee.afterhours@gmail.com?subject="+encodeURIComponent("Quote request: Miami to Boston")+"&body="+body;
+  document.getElementById('sentmsg').classList.add('on');
   return false;
 }
 </script>
 
 </main>
-<footer class="site"><div class="wrap">
-<div class="fgrid">
-<div class="fbrand"><span class="nm">After <b>Hours</b></span>
-<p>Privately owned enclosed auto and motorcycle transport out of Norton, Massachusetts. Door to door across the lower 48 since 1997.</p>
-<p style="margin-top:10px"><a href="https://instagram.com/ahatransport" rel="noopener">Instagram: @ahatransport</a></p></div>
-<div><h4>Visit</h4><ul>
-<li>145R W Main St<br>Norton, MA 02766</li>
-<li style="margin-top:10px">Mon to Fri: 8am to 7pm<br>Sat: 8am to 5pm<br>Sun: closed</li>
-<li style="margin-top:6px">On call beyond that</li></ul></div>
-<div><h4>Departments</h4><ul>
-<li><a href="tel:+18572096454">Operations 857-209-6454</a></li>
-<li><a href="tel:+16175271793">Dispatch 617-527-1793</a></li>
-<li><a href="tel:+16179472576">Accounting 617-947-2576</a></li>
-<li style="margin-top:8px"><a href="mailto:vee.afterhours@gmail.com">vee.afterhours@gmail.com</a></li></ul></div>
-<div><h4>Site</h4><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="snowbird.html">Snowbird</a></li>
-<li><a href="miami-to-boston.html">Miami to Boston</a></li>
-<li><a href="fleet.html">Fleet</a></li>
-<li><a href="how-it-works.html">How It Works</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<li><a href="contact.html">Contact</a></li></ul></div>
+<footer class="lpf"><div class="wrap">
+<div class="row">
+<span>After Hours Auto, Inc. &middot; 145R W Main St, Norton, MA 02766</span>
+<span><a href="tel:+18572096454">Operations 857-209-6454</a> &nbsp;&nbsp; <a href="tel:+16175271793">Dispatch 617-527-1793</a></span>
+<a href="index.html">Full site &rarr;</a>
 </div>
 <div class="fplate">
 <span><b>USDOT</b> 697230</span><span><b>MC</b> 324432</span>
-<span><b>BBB</b> A+ Accredited</span><span><b>Interstate authority</b> since 1997</span><span><b>Fully insured</b></span>
+<span><b>BBB</b> A+ Accredited</span><span><b>Since</b> 1997</span><span><b>Fully insured</b></span>
 </div>
 <div class="legal"><span>&copy; 2026 After Hours Auto, Inc. DBA After Hours Towing &amp; Transport</span><span>Norton, Massachusetts</span></div>
 </div></footer>
