@@ -11,19 +11,19 @@
 <meta property="og:description" content="Reach After Hours Auto in Norton, MA. Operations 857-209-6454, dispatch 617-527-1793, accounting 617-947-2576. Office hours Mon to Fri 9 to 5, on call after hours.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="After Hours Auto, Inc.">
-<meta property="og:image" content="https://primary.jwwb.nl/public/w/a/q/temp-svdxyixrwpydpehgpmvq/img_2856-high.jpg?enable-io=true&amp;enable=upscale&amp;width=1200">
+<meta property="og:image" content="https://jakelabate.github.io/after-hours-auto/img/img_2856-high.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0C111C">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C111C'/%3E%3Ccircle cx='16' cy='12' r='7' fill='%23F2A31B'/%3E%3Crect x='4' y='22' width='6' height='3' rx='1' fill='%23F2A31B'/%3E%3Crect x='13' y='22' width='6' height='3' rx='1' fill='%23F2A31B'/%3E%3Crect x='22' y='22' width='6' height='3' rx='1' fill='%23F2A31B'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2326221C'/%3E%3Cpath d='M16 4 L26 8 V16 C26 22.5 16 28 16 28 Z' fill='%23ECE8DD'/%3E%3Cpath d='M16 4 L6 8 V16 C6 22.5 16 28 16 28 Z' fill='%23EA5B24'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Overpass:wght@400;600;700&family=Overpass+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --asphalt:#0C111C; --bluehour:#182640; --panel:#17253E; --dkline:#5A6B85;
-  --headlight:#F2A31B; --highbeam:#FFCE7A; --rust:#9E5200;
-  --concrete:#F2F4F7; --card:#FFFFFF; --line:#D9DFE8;
-  --ink:#161E29; --steel:#5E6D83; --reflect:#EDF1F7; --dim:#A9B6C9;
+  --asphalt:#1E1B15; --bluehour:#322D24; --panel:#2B2720; --dkline:#7D7462;
+  --headlight:#F0703A; --highbeam:#F79A6E; --rust:#A63D10;
+  --concrete:#F2EFE7; --card:#FFFFFF; --line:#E1DCD1;
+  --ink:#26221C; --steel:#615A4E; --reflect:#F2EFE8; --dim:#C4BCAD;
   --disp:'Barlow Condensed',sans-serif; --body:'Overpass',sans-serif; --mono:'Overpass Mono',monospace;
   --max:1120px; --rad:3px;
 }
@@ -51,7 +51,7 @@ h3{font-size:clamp(1.3rem,2.4vw,1.7rem);letter-spacing:.03em}
 .on-dark h1,.on-dark h2,.on-dark h3{color:var(--reflect)}
 
 /* ---------- header ---------- */
-header.site{background:var(--asphalt);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(242,163,27,.4)}
+header.site{background:var(--asphalt);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(240,112,58,.4)}
 .bar{display:flex;align-items:center;gap:28px;min-height:72px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
 .brand svg{flex:none}
@@ -68,10 +68,10 @@ nav.main a[aria-current="page"]{color:var(--headlight);box-shadow:inset 0 -2px 0
 .menu-t{display:none;margin-left:auto;background:none;border:1px solid var(--dkline);color:var(--reflect);font-family:var(--mono);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;padding:10px 14px;border-radius:var(--rad);cursor:pointer}
 @media(max-width:960px){
   .menu-t{display:block}
-  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--asphalt);border-bottom:1px solid rgba(242,163,27,.25);display:none;margin:0}
+  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--asphalt);border-bottom:1px solid rgba(240,112,58,.25);display:none;margin:0}
   nav.main.open{display:block}
   nav.main ul{flex-direction:column;align-items:stretch;gap:0;padding:10px 24px 22px}
-  nav.main a{display:block;padding:13px 6px;font-size:.82rem;border-bottom:1px solid rgba(90,107,133,.45)}
+  nav.main a{display:block;padding:13px 6px;font-size:.82rem;border-bottom:1px solid rgba(125,116,98,.55)}
   nav.main a[aria-current="page"]{box-shadow:inset 3px 0 0 var(--headlight);padding-left:14px}
   .callbtn{margin-top:14px;text-align:center}
 }
@@ -87,9 +87,9 @@ nav.main a[aria-current="page"]{color:var(--headlight);box-shadow:inset 0 -2px 0
 @media(prefers-reduced-motion:reduce){.lane.go::before{animation:none}html{scroll-behavior:auto}}
 
 /* ---------- hero ---------- */
-.hero{background:linear-gradient(178deg,var(--asphalt) 8%,var(--bluehour) 74%,#223353 100%);color:var(--reflect);padding:104px 0 88px;position:relative;overflow:hidden}
+.hero{background:linear-gradient(178deg,var(--asphalt) 8%,var(--bluehour) 74%,#3B352A 100%);color:var(--reflect);padding:104px 0 88px;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;right:-140px;top:-190px;width:520px;height:520px;border-radius:50%;
-  background:radial-gradient(circle,rgba(242,163,27,.16) 0%,rgba(242,163,27,.05) 45%,transparent 68%);pointer-events:none}
+  background:radial-gradient(circle,rgba(240,112,58,.16) 0%,rgba(240,112,58,.05) 45%,transparent 68%);pointer-events:none}
 .hero h1{max-width:12ch;margin:0 0 22px}
 .hero .lede{max-width:56ch;font-size:1.16rem}
 .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
@@ -102,12 +102,12 @@ nav.main a[aria-current="page"]{color:var(--headlight);box-shadow:inset 0 -2px 0
 .btn.dkghost:hover{border-color:var(--ink)}
 
 /* ---------- data plate ---------- */
-.plate{display:flex;flex-wrap:wrap;border:1px solid rgba(242,163,27,.65);border-radius:var(--rad);margin-top:52px;background:rgba(12,17,28,.55);max-width:840px}
-.plate div{flex:1 1 190px;padding:16px 20px;border-right:1px solid rgba(242,163,27,.45)}
+.plate{display:flex;flex-wrap:wrap;border:1px solid rgba(240,112,58,.65);border-radius:var(--rad);margin-top:52px;background:rgba(30,27,21,.6);max-width:840px}
+.plate div{flex:1 1 190px;padding:16px 20px;border-right:1px solid rgba(240,112,58,.45)}
 .plate div:last-child{border-right:none}
 .plate .k{font-family:var(--mono);font-size:.62rem;letter-spacing:.24em;color:var(--headlight);display:block;margin-bottom:4px}
 .plate .v{font-family:var(--mono);font-size:1rem;color:var(--reflect);letter-spacing:.05em}
-@media(max-width:700px){.plate div{flex:1 1 46%;border-bottom:1px solid rgba(242,163,27,.45)}.plate div:nth-last-child(-n+2){border-bottom:none}}
+@media(max-width:700px){.plate div{flex:1 1 46%;border-bottom:1px solid rgba(240,112,58,.45)}.plate div:nth-last-child(-n+2){border-bottom:none}}
 
 /* ---------- page header (interior) ---------- */
 .phead{background:linear-gradient(178deg,var(--asphalt) 20%,var(--bluehour) 100%);color:var(--reflect);padding:78px 0 62px}
@@ -154,7 +154,7 @@ a.card:hover .go{color:var(--rust)}
 .ticklist li{padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--line);color:var(--ink)}
 .ticklist li:last-child{border-bottom:none}
 .ticklist li::before{content:"";position:absolute;left:0;top:19px;width:18px;height:4px;background:var(--headlight);border-radius:2px}
-.dk .ticklist li{border-color:rgba(90,107,133,.55);color:var(--reflect)}
+.dk .ticklist li{border-color:rgba(125,116,98,.6);color:var(--reflect)}
 
 /* ---------- quote ---------- */
 .quote{max-width:880px;margin:0 auto;text-align:left}
@@ -215,7 +215,7 @@ a.card:hover .go{color:var(--rust)}
 .gal button::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 0 var(--headlight);transition:box-shadow .16s ease}
 .gal button:hover::after{box-shadow:inset 0 0 0 3px var(--headlight)}
 .gal img{width:100%;display:block}
-.lb{position:fixed;inset:0;background:rgba(8,11,18,.94);display:none;align-items:center;justify-content:center;z-index:120;padding:24px}
+.lb{position:fixed;inset:0;background:rgba(24,21,16,.94);display:none;align-items:center;justify-content:center;z-index:120;padding:24px}
 .lb.on{display:flex}
 .lb img{max-width:94vw;max-height:86vh;border-radius:var(--rad);box-shadow:0 20px 60px rgba(0,0,0,.5)}
 .lb .x{position:absolute;top:18px;right:22px;background:none;border:1px solid var(--steel);color:var(--reflect);font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:9px 15px;border-radius:var(--rad);cursor:pointer}
@@ -229,7 +229,7 @@ a.card:hover .go{color:var(--rust)}
 .lphero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
 @media(max-width:920px){.lphero{grid-template-columns:1fr;gap:40px}}
 .trustrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
-.trustrow span{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--reflect);border:1px solid rgba(242,163,27,.65);border-radius:var(--rad);padding:8px 12px}
+.trustrow span{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--reflect);border:1px solid rgba(240,112,58,.65);border-radius:var(--rad);padding:8px 12px}
 .trustrow span b{color:var(--headlight);font-weight:600}
 .qform{background:var(--card);border-radius:var(--rad);border:1px solid var(--line);border-top:4px solid var(--headlight);padding:30px 28px;color:var(--ink)}
 .qform h2{font-size:1.7rem;margin-bottom:6px;color:var(--ink)}
@@ -247,7 +247,7 @@ a.card:hover .go{color:var(--rust)}
 .qnote{margin-top:12px;font-size:.8rem;color:var(--steel);text-align:center}
 .stickycall{display:none}
 @media(max-width:720px){
-  .stickycall{display:grid;grid-template-columns:1fr 1fr;gap:1px;position:fixed;left:0;right:0;bottom:0;z-index:90;background:rgba(242,163,27,.4)}
+  .stickycall{display:grid;grid-template-columns:1fr 1fr;gap:1px;position:fixed;left:0;right:0;bottom:0;z-index:90;background:rgba(240,112,58,.4)}
   .stickycall a{text-align:center;font-family:var(--mono);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:17px 8px}
   .stickycall .c1{background:var(--asphalt);color:var(--headlight)}
   .stickycall .c2{background:var(--headlight);color:var(--ink)}
@@ -255,7 +255,7 @@ a.card:hover .go{color:var(--rust)}
 }
 
 /* ---------- vehicle types strip ---------- */
-.types{background:var(--bluehour);border-bottom:1px solid rgba(242,163,27,.4);padding:15px 0}
+.types{background:var(--bluehour);border-bottom:1px solid rgba(240,112,58,.4);padding:15px 0}
 .types .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:center}
 .types span{font-family:var(--mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--reflect);white-space:nowrap}
 .types span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--headlight);margin-right:11px;vertical-align:2px}
@@ -270,11 +270,11 @@ a.card:hover .go{color:var(--rust)}
 @media(prefers-reduced-motion:reduce){.photostrip img{transition:none}.photostrip a:hover img{transform:none}}
 
 /* ---------- card polish ---------- */
-a.card:hover{border-top-color:var(--headlight);transform:translateY(-3px);box-shadow:0 12px 28px rgba(12,17,28,.10)}
+a.card:hover{border-top-color:var(--headlight);transform:translateY(-3px);box-shadow:0 12px 28px rgba(30,27,21,.12)}
 @media(prefers-reduced-motion:reduce){a.card:hover{transform:none}}
 
 /* ---------- LP chrome ---------- */
-.lpchip{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--reflect);border:1px solid rgba(242,163,27,.65);border-radius:var(--rad);padding:9px 13px;margin-left:auto;white-space:nowrap}
+.lpchip{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--reflect);border:1px solid rgba(240,112,58,.65);border-radius:var(--rad);padding:9px 13px;margin-left:auto;white-space:nowrap}
 .lpchip b{color:var(--headlight);font-weight:600}
 @media(max-width:600px){.lpchip{display:none}}
 header.lps .callbtn{margin-left:14px}
@@ -297,9 +297,9 @@ footer li{list-style:none;padding:5px 0}
 .fbrand .nm{font-family:var(--disp);font-weight:700;font-size:1.5rem;color:var(--reflect);text-transform:uppercase;letter-spacing:.04em}
 .fbrand .nm b{color:var(--headlight)}
 .fbrand p{margin-top:14px;max-width:34ch}
-.fplate{border-top:1px solid rgba(242,163,27,.45);padding:22px 0;display:flex;flex-wrap:wrap;gap:8px 34px;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
+.fplate{border-top:1px solid rgba(240,112,58,.45);padding:22px 0;display:flex;flex-wrap:wrap;gap:8px 34px;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
 .fplate span b{color:var(--headlight);font-weight:600}
-.legal{border-top:1px solid rgba(90,107,133,.4);padding:20px 0 26px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;display:flex;flex-wrap:wrap;gap:8px 30px;justify-content:space-between}
+.legal{border-top:1px solid rgba(125,116,98,.5);padding:20px 0 26px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;display:flex;flex-wrap:wrap;gap:8px 30px;justify-content:space-between}
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -331,6 +331,8 @@ footer li{list-style:none;padding:5px 0}
     {"@type": "PropertyValue", "propertyID": "USDOT", "value": "697230"},
     {"@type": "PropertyValue", "propertyID": "MC", "value": "324432"}
   ],
+  "logo": "https://jakelabate.github.io/after-hours-auto/img/after-hours-logo-high.jpg",
+  "image": "https://jakelabate.github.io/after-hours-auto/img/img_2856-high.jpg",
   "sameAs": [
     "https://instagram.com/ahatransport",
     "https://www.afterhoursautoinc.com/",
@@ -341,7 +343,7 @@ footer li{list-style:none;padding:5px 0}
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header class="site"><div class="wrap bar">
-<a class="brand" href="index.html"><svg width="34" height="34" viewBox="0 0 32 32" fill="none" role="img" aria-label="After Hours Auto mark"><rect width="32" height="32" rx="6" fill="#0C111C" stroke="#F2A31B" stroke-width="1"/><circle cx="16" cy="12" r="7" fill="#F2A31B"/><rect x="4" y="22" width="6" height="3" rx="1" fill="#F2A31B"/><rect x="13" y="22" width="6" height="3" rx="1" fill="#F2A31B"/><rect x="22" y="22" width="6" height="3" rx="1" fill="#F2A31B"/></svg><span><span class="nm">After <b>Hours</b></span><span class="sub">Towing &amp; Transport</span></span></a>
+<a class="brand" href="index.html"><img src="img/after-hours-logo-high.jpg" alt="After Hours Transport shield logo" width="46" height="46" style="border-radius:6px;display:block"><span><span class="nm">After <b>Hours</b></span><span class="sub">Towing &amp; Transport</span></span></a>
 <button class="menu-t" aria-expanded="false" aria-controls="mainnav" onclick="var n=document.getElementById('mainnav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
 <nav class="main" id="mainnav" aria-label="Main"><ul><li><a href="services.html">Services</a></li><li><a href="snowbird.html">Snowbird</a></li><li><a href="fleet.html">Fleet</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a class="callbtn" href="tel:+16175271793">Dispatch 617-527-1793</a></li></ul></nav>
 </div></header>
@@ -385,7 +387,7 @@ footer li{list-style:none;padding:5px 0}
 <a class="btn ghost" href="https://instagram.com/ahatransport" rel="noopener">@ahatransport on Instagram</a>
 </div>
 </div>
-<div class="media"><img src="https://primary.jwwb.nl/public/w/a/q/temp-svdxyixrwpydpehgpmvq/img_4658-high.png?enable-io=true&amp;enable=upscale&amp;width=1200" alt="After Hours Auto transport truck" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+<div class="media"><img src="img/img_4658-high.jpg" alt="After Hours Auto transport truck" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
 </div>
 </div></section>
 
