@@ -1,0 +1,31 @@
+name: vendor-assets
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  vendor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download brand assets from Webador CDN
+        run: |
+          mkdir -p vendor
+          B="https://primary.jwwb.nl/public/w/a/q/temp-svdxyixrwpydpehgpmvq"
+          for f in after-hours-logo-high.jpg will-s-truck-trailer-standard.jpg joe-s-truck-standard.jpg \
+                   img_2856-high.jpg img_3724-high.jpg img_3726-high.jpg img_3728-high.jpg \
+                   _dsc3745-high.jpg img_4658-high.png img_4659-standard-tq35vl.jpg \
+                   8683e15c-fb7f-468a-ad46-5ad31bffffac-high.jpg \
+                   e4feb16c-282d-4151-93fc-68837c61eca0-high.jpg \
+                   ac8cf2d1-3752-4d03-b992-f5e48e2c1a99-standard.jpg \
+                   3369252416188552144-high.jpg 7238089186690878264-high.jpg \
+                   "pasted-image-thu-jan-29-2026-12-32-05-gmt-0500-eastern-standard-time-high.png"; do
+            curl -sL --fail "$B/$f" -o "vendor/$f" || echo "MISS $f"
+          done
+          ls -la vendor/
+      - name: Commit
+        run: |
+          git config user.name "vendor-bot"
+          git config user.email "vendor@users.noreply.github.com"
+          git add vendor
+          git commit -m "Vendor brand assets from Webador CDN" || echo "nothing to commit"
+          git push
