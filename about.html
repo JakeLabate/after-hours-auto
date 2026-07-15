@@ -59,14 +59,14 @@ header.site{background:var(--asphalt);position:sticky;top:0;z-index:50;border-bo
 .brand .nm b{color:var(--headlight);font-weight:700}
 .brand .sub{display:block;font-family:var(--mono);font-size:.58rem;letter-spacing:.3em;color:var(--dim);margin-top:4px}
 nav.main{margin-left:auto}
-nav.main ul{display:flex;list-style:none;gap:4px;align-items:center}
-nav.main a{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-decoration:none;padding:10px 12px;border-radius:var(--rad)}
+nav.main ul{display:flex;list-style:none;gap:2px;align-items:center}
+nav.main a{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-decoration:none;padding:10px 10px;border-radius:var(--rad);white-space:nowrap}
 nav.main a:hover{color:var(--reflect)}
 nav.main a[aria-current="page"]{color:var(--headlight);box-shadow:inset 0 -2px 0 var(--headlight)}
 .callbtn{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;background:var(--headlight);color:var(--ink)!important;padding:11px 16px!important;border-radius:var(--rad);font-weight:600;white-space:nowrap}
 .callbtn:hover{background:var(--highbeam)}
 .menu-t{display:none;margin-left:auto;background:none;border:1px solid var(--dkline);color:var(--reflect);font-family:var(--mono);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;padding:10px 14px;border-radius:var(--rad);cursor:pointer}
-@media(max-width:960px){
+@media(max-width:1120px){
   .menu-t{display:block}
   nav.main{position:absolute;left:0;right:0;top:100%;background:var(--asphalt);border-bottom:1px solid rgba(240,112,58,.25);display:none;margin:0}
   nav.main.open{display:block}
@@ -154,7 +154,7 @@ a.card:hover .go{color:var(--rust)}
 .ticklist li{padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--line);color:var(--ink)}
 .ticklist li:last-child{border-bottom:none}
 .ticklist li::before{content:"";position:absolute;left:0;top:19px;width:18px;height:4px;background:var(--headlight);border-radius:2px}
-.dk .ticklist li{border-color:rgba(125,116,98,.6);color:var(--reflect)}
+.on-dark .ticklist li{border-color:rgba(125,116,98,.6);color:var(--reflect)}
 
 /* ---------- quote ---------- */
 .quote{max-width:880px;margin:0 auto;text-align:left}
@@ -345,7 +345,7 @@ footer li{list-style:none;padding:5px 0}
 <header class="site"><div class="wrap bar">
 <a class="brand" href="index.html"><img src="img/after-hours-logo-high.jpg" alt="After Hours Transport shield logo" width="46" height="46" style="border-radius:6px;display:block"><span><span class="nm">After <b>Hours</b></span><span class="sub">Towing &amp; Transport</span></span></a>
 <button class="menu-t" aria-expanded="false" aria-controls="mainnav" onclick="var n=document.getElementById('mainnav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
-<nav class="main" id="mainnav" aria-label="Main"><ul><li><a href="services.html">Services</a></li><li><a href="snowbird.html">Snowbird</a></li><li><a href="fleet.html">Fleet</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a class="callbtn" href="tel:+16175271793">Dispatch 617-527-1793</a></li></ul></nav>
+<nav class="main" id="mainnav" aria-label="Main"><ul><li><a href="services.html">Services</a></li><li><a href="snowbird.html">Snowbird</a></li><li><a href="fleet.html">Fleet</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a class="callbtn" href="tel:+16175271793" aria-label="Call dispatch at 617-527-1793">617-527-1793</a></li></ul></nav>
 </div></header>
 <main id="main">
 
